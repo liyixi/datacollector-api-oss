@@ -136,46 +136,46 @@
     </dependency>
   </dependencies>
 
-  <profiles>
-    <profile>
-      <id>sign</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <executions>
-              <execution>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <profile>
-      <id>javadoc-java8</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <jdk>1.8</jdk>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <configuration>
-              <!-- Thank you Java 8 -->
-              <additionalparam>-Xdoclint:none</additionalparam>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+<!--  <profiles>-->
+<!--    <profile>-->
+<!--      <id>sign</id>-->
+<!--      <build>-->
+<!--        <plugins>-->
+<!--          <plugin>-->
+<!--            <groupId>org.apache.maven.plugins</groupId>-->
+<!--            <artifactId>maven-gpg-plugin</artifactId>-->
+<!--            <executions>-->
+<!--              <execution>-->
+<!--                <phase>verify</phase>-->
+<!--                <goals>-->
+<!--                  <goal>sign</goal>-->
+<!--                </goals>-->
+<!--              </execution>-->
+<!--            </executions>-->
+<!--          </plugin>-->
+<!--        </plugins>-->
+<!--      </build>-->
+<!--    </profile>-->
+<!--    <profile>-->
+<!--      <id>javadoc-java8</id>-->
+<!--      <activation>-->
+<!--        <activeByDefault>false</activeByDefault>-->
+<!--        <jdk>1.8</jdk>-->
+<!--      </activation>-->
+<!--      <build>-->
+<!--        <plugins>-->
+<!--          <plugin>-->
+<!--            <groupId>org.apache.maven.plugins</groupId>-->
+<!--            <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--            <configuration>-->
+<!--              &lt;!&ndash; Thank you Java 8 &ndash;&gt;-->
+<!--              <additionalparam>-Xdoclint:none</additionalparam>-->
+<!--            </configuration>-->
+<!--          </plugin>-->
+<!--        </plugins>-->
+<!--      </build>-->
+<!--    </profile>-->
+<!--  </profiles>-->
 
   <build>
     <resources>
